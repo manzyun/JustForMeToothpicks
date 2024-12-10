@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="ja">
+<head>
+    <meta charset="utf-8">
+    <title>Journal Generator of Text Chat Apps</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap" rel="stylesheet">
+    <link href="./css/destyle.min.css" rel="stylesheet" />
+    <link href="./css/app.css" rel="stylesheet" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+    <div class="content">
+        <h1 class='title'>日報ジェネレーター</h1>
+        <form name="journal">
+            <h2 class="section-header">午前</h2>
+            <label for="am_summary">やったこと</label>
+            <input name="am_summary" type="text" value="" placeholder="やったこと"/>
+            <label for="am_comment">できたこと、できなかったこと</label>
+            <textarea cols="30" id="" name="am_comment" rows="10" placeholder="できたこと、できなかったこと"></textarea>
+            <h2 class="section-header">午後</h2>
+            <label for="pm_summary">やったこと</label>
+            <input name="pm_summary" type="text" value="" placeholder="やったこと"/>
+            <label for="pm_comment">できたこと、できなかったこと</label>
+            <textarea cols="30" id="" name="pm_comment" rows="10" placeholder="できたこと、できなかったこと"></textarea>
+            <h2 class="section-header">一日を振り返って</h2>
+            <textarea cols="30" id="" name="day_comment" rows="10"></textarea>
+            <button>クリップボードに反映</button>
+        </form>
+        <div class="about">
+            <details>
+                <summary class="section-headers">なんすかこれ？</summary>
+                <p>
+                    だだ、プレーンテキストの日報をクリップボード（コピーした文字とかを補間するところ）に貼り付けるだけのツールです。このページ全体をダウンロードするだけでも使えます
+                </p>
+            </details>
+        </div>
+    </div>
+</body>
+</html>
